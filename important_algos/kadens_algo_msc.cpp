@@ -15,7 +15,7 @@ int maxsum(vector<int> vect){
     int ans = vect[0];
 
     for(int i=0;i<vect.size();i++){
-        if(sum+vect[i]>0){
+        if(sum+vect[i]>=0){
             sum+=vect[i];
             if(sum>ans) ans = sum;
         }
@@ -27,7 +27,7 @@ int maxsum(vector<int> vect){
         
     }
 
-    return sum;
+    return ans;
     
 }
 
